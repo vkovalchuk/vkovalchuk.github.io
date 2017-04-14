@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Vladimir Kovalchuk Engineering Blog</title>
+</head>
+<body>
+  <h2>Collaborative edit: idea / 2017-04-14</h2>
+  <p>Often a web application allows simultaneous edit of the same entity for different users.
+Usual approach is to either set a lock (horrible nowadays), or to inform the one who saved the last that "Entry was modified..." and propose to reconcile,
+or just silently override (low class).</p>
+<p>I just have thought: there can be explicit collaboration with WebSockets.</p>
+<ul>
+  <li>Show a label "It is being edited by Alice" to Bob so it's not a lock and expires;</li>
+  <li>When Bob starts editing Alice receives a message "Bob also works on this";</li>
+  <li>If Alice/Bob saves the changes then Bob/Alice sees them in immediate popup (don't wait until "Save") that be closed with "";</li>
+  <li>With this "Alice has saved this item. Item details:..." popup Bob must reconcile;</li>
+  <li>Only in the rare case that both "Save changes" requests are indeed posted at the same time span Bob will get "Oops, please reconcile" dialog.</li>
+</ul>
+<p>AFAIR this is something like Google Spreadsheet does. Very nice!</p>
+<small>Tags: UX, Web</small>
+</body>
+</html>
