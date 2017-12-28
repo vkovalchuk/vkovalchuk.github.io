@@ -1,0 +1,7 @@
+_generated/
+node_modules/
+scaffolds/
+source/
+themes/
+db.json
+package.json
