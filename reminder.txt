@@ -14,3 +14,4 @@ Later I am going to configure hexo-generation-1/blog/_config.yml "deploy: type: 
 
 Hexo uses themes. Those are not Jekyll themes. To change, in _config.yml specify "theme: bootstrap-blog"
  and clone theme repo under themes/ dir.
+Theme https://github.com/cgmartin/hexo-theme-bootstrap-blog.git requires override of "about_widget_content:" in blog's _config.yml

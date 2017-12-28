@@ -10,6 +10,15 @@ author: Vladimir Kovalchuk
 language: en
 timezone: Europe/Minsk
 
+
+theme_config:
+  about_widget_content: >
+    <a href="https://www.linkedin.com/in/vladimirkovalchuk/">Vladimir Kovalchuk</a>
+    <p>Software Engineer Team Leader</p>
+    <p>EPAM Systems</p>
+    <p>Belarussian State Polytechnical Academy</p>
+    <p>Minsk, Belarus</p>
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://vkovalchuk.github.io
