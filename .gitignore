@@ -1,0 +1,6 @@
+node_modules/
+_generated/
+scaffolds/
+themes/
+db.json
+package.json
