@@ -3,14 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Engineering Blog</title>
+  <title>Secrets Vault: what we did not see earlier | Engineering Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Engineering Blog">
-<meta property="og:url" content="https://vkovalchuk.github.io/index.html">
+  <meta name="description" content="Couple years ago I have heard about Hashicorp Vault for secrets storage. “So you don’t store them in files.” Of course Vault stores them in files; it just uses network protocol instead of file API. Ho">
+<meta name="keywords" content="rant,DevOps">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Secrets Vault: what we did not see earlier">
+<meta property="og:url" content="https://vkovalchuk.github.io/2018/01/12/Key-vault-what-s-new/index.html">
 <meta property="og:site_name" content="Engineering Blog">
+<meta property="og:description" content="Couple years ago I have heard about Hashicorp Vault for secrets storage. “So you don’t store them in files.” Of course Vault stores them in files; it just uses network protocol instead of file API. Ho">
+<meta property="og:updated_time" content="2018-02-19T09:37:10.786Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Engineering Blog">
+<meta name="twitter:title" content="Secrets Vault: what we did not see earlier">
+<meta name="twitter:description" content="Couple years ago I have heard about Hashicorp Vault for secrets storage. “So you don’t store them in files.” Of course Vault stores them in files; it just uses network protocol instead of file API. Ho">
   
     <link rel="alternate" href="/atom.xml" title="Engineering Blog" type="application/atom+xml">
   
@@ -46,7 +51,7 @@
     <div class="collapse navbar-collapse" id="main-menu-navbar">
       <ul class="nav navbar-nav">
         
-          <li><a class="active"
+          <li><a class=""
                  href="/index.html">Home</a></li>
         
           <li><a class=""
@@ -75,15 +80,13 @@
 
     <div class="row">
         <div class="col-sm-8 blog-main">
-          
-  
-    <article id="post-Key-vault-what-s-new" class="article article-type-post" itemscope itemprop="blogPost">
+          <article id="post-Key-vault-what-s-new" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/12/Key-vault-what-s-new/">Secrets Vault: what we did not see earlier</a>
+    <h1 class="article-title" itemprop="name">
+      Secrets Vault: what we did not see earlier
     </h1>
   
 
@@ -127,179 +130,22 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<ul id="article-nav" class="nav nav-pills nav-justified">
   
-    <article id="post-Null-Null-objects-and-Optional" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/09/Null-Null-objects-and-Optional/">Null, Null objects and Optional</a>
-    </h1>
+  <li role="presentation">
+    <a href="/2018/01/09/Null-Null-objects-and-Optional/" id="article-nav-newer" class="article-nav-link-wrap">
+      <span class="article-nav-link-title">Null, Null objects and Optional</span>
+      <i class="fa fa-chevron-right pull-right"></i>
+    </a>
+  </li>
   
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2018/01/09/Null-Null-objects-and-Optional/" class="article-date"><time datetime="2018-01-09T09:28:36.000Z" itemprop="datePublished">2018-01-09</time></a>
-</div>
-
-    
-    
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>There is constant tune “introducing NULL was a billion-dollar mistake!” and suggestions that mere eliminating NULL concept will solve this particular class of problems. Naive souls pushed through introduction of Optional into Java, like Maybe monad or Scala Option. So instead of checking for NULL you either call a map()/flatMap() or check for isPresent(). OK you never get NPE; instead you get a program that has no effect because the data are absent. A user liberated from seeing horrrors of HPE will log into account and see her list of credit cards empty. Much better now! Not being liberated from the money I mean.</p>
-<p>Contrary to popular belief a NULL is not pure invention of computer geeks. It reflects part of business domain where some fact is not yet known, as in SQL. If there is no correct  value, developer will use something bogus which is equivalent for NULL, called NULL object. Union type helps by compiler warning that “here you must handle other possible type”; but then usual Java could be improved by compiler’s nullability analysis and warnings. Though I must admit “Type! name” is shorter notation than “@NonNull Type name”.</p>
-<p>Go lang provided interesting solution where nil slice has length. It is safe to iterate so NPE for the nil goes away. I was surprized to see people arguing against “strange nil is an error”. No, it’s your impression that nil a C’s NULL and causes memory fault is an error. Useful zero is exactly what NULL must be, and panic is the correct behavior for the call.</p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      <a data-url="https://vkovalchuk.github.io/2018/01/09/Null-Null-objects-and-Optional/" data-id="cjcbqy5jj0003j8o0kj8oc954" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/FP/">FP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Golang/">Golang</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rant/">rant</a></li></ul>
-
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Collaborative-edit-idea" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/14/Collaborative-edit-idea/">Collaborative edit: idea</a>
-    </h1>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2017/04/14/Collaborative-edit-idea/" class="article-date"><time datetime="2017-04-14T14:57:31.000Z" itemprop="datePublished">2017-04-14</time></a>
-</div>
-
-    
-    
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Often a web application allows simultaneous edit of the same entity for different users.<br>Usual approach is to either set a lock (horrible nowadays), or to inform the one who saved the last that “Entry was modified…” and propose to reconcile,<br>or just silently override (low class).</p>
-<p>I just have thought: there can be explicit collaboration with WebSockets.</p>
-<ul>
-<li>Show a label “It is being edited by Alice” to Bob so it’s not a lock and expires;</li>
-<li>When Bob starts editing Alice receives a message “Bob also works on this”;</li>
-<li>If Alice/Bob saves the changes then Bob/Alice sees them in immediate popup (don’t wait until “Save”);</li>
-<li>With this “Alice has saved this item. Item details:…” popup Bob must reconcile;</li>
-<li>Only in the rare case that both “Save changes” requests are indeed posted at the same time span Bob will get “Oops, please reconcile” dialog.</li>
 </ul>
-<p>AFAIR this is something like Google Spreadsheet does. Very nice!</p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      <a data-url="https://vkovalchuk.github.io/2017/04/14/Collaborative-edit-idea/" data-id="cjcbqy5iz0000j8o03gupk5m7" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UX/">UX</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web/">Web</a></li></ul>
 
 
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2017/01/01/hello-world/" class="article-date"><time datetime="2017-01-01T07:00:00.000Z" itemprop="datePublished">2017-01-01</time></a>
-</div>
-
-    
-    
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>!<br>This is my very first post.<br>Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info.</p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      <a data-url="https://vkovalchuk.github.io/2017/01/01/hello-world/" data-id="cjcbqy5jj0004j8o0onuzsuca" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 
